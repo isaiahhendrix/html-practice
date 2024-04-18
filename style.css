@@ -8,8 +8,29 @@
     color:red
 }
 
-#textbox
-{
+}
+.link1 {
+    color:blue
+}
+
+.link2{
+    color:green
+}
+.textbox {
     height: 30px;
     width: 200px;
+}
+
+
+.firestarters
+{
+   
+    color:red
+
+}
+.waterstarters {
+    color: blue
+}
+.grassstarters {
+    color: green
 }

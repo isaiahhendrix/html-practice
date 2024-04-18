@@ -7,31 +7,99 @@
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <h1> header 1</h1>
-    <h2> header 2</h2>
-    <p> random shit</p>
-    <p> random shit 2</p>
+    <h1> Pokemon evolution sheet</h1>
+    <h2> charizard evolution</h2>
+   
+    
     <ul>
         <li> charmander</li>
         <li> charmeleon</li>
         <li> charizard</li>
     </ul>
 
-    <ol>
-        <li> charmander</li>
-        <li> charmeleon</li>
-        <li> charizard</li>
-    </ol>
+    <p> 1. Charmander </p>
     <img src="images/charmander.jpg" class="img" />
     <a class="link" href="aboutme.html">about me </a>
+    <input type="text" id="textbox"class="firestarters textbox"/>
+    <button onclick="charmander()">clickme</button>
+
+    <p> 2.charmeleon</p>
+    <img src="images/charmeleon.jpg" class="img"/>
+    <a class="link" href="aboutme2.html">about me </a>
+    <input type="text" id="textboxcharmeleon"class="firestarters textbox"/>
+    <button onclick="charmeleon()">clickme</button>
+
+    
+        
+    <p>3. charizard</p>
+    <img src="images/charizard.jpg" class="img"/>
+    <a class="link" href="aboutme3.html">about me</a>
+    <input type="text" id="textbox"class="firestarters textbox"/>
+    <button onclick="sayname()">clickme</button>
+
+    <h3>blastoise evolution</h3>
+
+    <ul>
+        <li>squirtle</li>
+        <li>wartortle</li>
+        <li>blastoise</li>
+    </ul>
+
+    
+    <p>1. squirtle</p>
+    <img src="images/squirtle.jpg" class="img"/>
+    <a class="link1" href="aboutme4.html">about me</a>
+    <input type="text" id="textbox"class="waterstarters"/>
+    <button onclick="sayname()">clickme</button>
+
+    
+      <p>2. wartortle</p>
+    <img src="images/wartortle.jpg" class="img"/>
+    <a class="link1" href="aboutme5.html">about me</a>
     <input type="text" id="textbox"/>
     <button onclick="sayname()">clickme</button>
+    
+    <p>3.blastoise</p>
+    <img src="images/blastoise.jpg" class="img"/>
+    <a class="link1" href="aboutme6.html">about me</a>
+    <input type="text" id="textbox"/>
+    <button onclick="sayname()">clickme</button>
+
+    <h4>venusaur evolution</h4>
+
+    <ul>
+        <li>bulbasaur</li>
+        <li>ivysaur</li>
+        <li>venusaur</li>
+    </ul>
+
+    <p>1.bulbasaur</p>
+    <img src="images/bulbasaur.jpg" class="img" />
+    <a class="link2" href="aboutme7.html">about me</a>
+    <input type="text" id="textbox"/>
+    <button onclick="sayname()">clickme</button>
+
+    <p>2.Ivysaur</p>
+    <img src="images/ivysaur.jpg" class="img"/>
+    
+
+
 </body>
 </html>
 <script>
-    function sayname() {
+    function charmander() {
         var input = document.getElementById("textbox").value;
-        alert(input);
+        if (input == 'moves') {
+            alert('stratch,ember,tackle');
+        }
+        
     }
+    function charmeleon() {
+        var input = document.getElementById("textboxcharmeleon").value;
+        if (input == 'moves') {
+            alert('blaze, flamethrower, cut')
+        }
+    }
+
 
 </script>
