@@ -4,38 +4,38 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
 </head>
 <body>
     <h1> Pokemon evolution sheet</h1>
     <h2> charizard evolution</h2>
-   
-    
+
+
     <ul>
         <li> charmander</li>
         <li> charmeleon</li>
         <li> charizard</li>
     </ul>
 
-    <p> 1. Charmander </p>
+    <p> 1. Charmander(#0004) </p>
     <img src="images/charmander.jpg" class="img" />
-    <a class="link" href="aboutme.html">about me </a>
-    <input type="text" id="textbox"class="firestarters textbox"/>
+    <a class="link" href="aboutcharmander.html">about me </a>
+    <input type="text" id="textbox" class="firestarters textbox" />
     <button onclick="charmander()">clickme</button>
 
-    <p> 2.charmeleon</p>
-    <img src="images/charmeleon.jpg" class="img"/>
-    <a class="link" href="aboutme2.html">about me </a>
-    <input type="text" id="textboxcharmeleon"class="firestarters textbox"/>
+    <p> 2.charmeleon(#0005)</p>
+    <img src="images/charmeleon.jpg" class="img" />
+    <a class="link" href="aboutcharmeleon.html">about me </a>
+    <input type="text" id="textboxcharmeleon" class="firestarters textbox" />
     <button onclick="charmeleon()">clickme</button>
 
-    
-        
-    <p>3. charizard</p>
-    <img src="images/charizard.jpg" class="img"/>
-    <a class="link" href="aboutme3.html">about me</a>
-    <input type="text" id="textbox"class="firestarters textbox"/>
-    <button onclick="sayname()">clickme</button>
+
+
+    <p>3. charizard(#0006)</p>
+    <img src="images/charizard.jpg" class="img" />
+    <a class="link" href="aboutcharizard.html">about me</a>
+    <input type="text" id="textboxcharizard" class="firestarters textbox" />
+    <button onclick="charizard()">clickme</button>
 
     <h3>blastoise evolution</h3>
 
@@ -45,25 +45,25 @@
         <li>blastoise</li>
     </ul>
 
-    
-    <p>1. squirtle</p>
-    <img src="images/squirtle.jpg" class="img"/>
-    <a class="link1" href="aboutme4.html">about me</a>
-    <input type="text" id="textbox"class="waterstarters"/>
-    <button onclick="sayname()">clickme</button>
 
-    
-      <p>2. wartortle</p>
-    <img src="images/wartortle.jpg" class="img"/>
-    <a class="link1" href="aboutme5.html">about me</a>
-    <input type="text" id="textbox"/>
-    <button onclick="sayname()">clickme</button>
-    
-    <p>3.blastoise</p>
-    <img src="images/blastoise.jpg" class="img"/>
-    <a class="link1" href="aboutme6.html">about me</a>
-    <input type="text" id="textbox"/>
-    <button onclick="sayname()">clickme</button>
+    <p>1. squirtle(#0007)</p>
+    <img src="images/squirtle.jpg" class="img" />
+    <a class="link1" href="aboutsquirtle.html">about me</a>
+    <input type="text" id="textboxsquirtle" class="waterstarters textbox" />
+    <button onclick="squirtle()">clickme</button>
+
+
+    <p>2. wartortle(#0008)</p>
+    <img src="images/wartortle.jpg" class="img" />
+    <a class="link1" href="aboutwartortle.html">about me</a>
+    <input type="text" id="textboxwartortle" class="waterstarters textbox" />
+    <button onclick="wartortle()">clickme</button>
+
+    <p>3.blastoise(#0009)</p>
+    <img src="images/blastoise.jpg" class="img" />
+    <a class="link1" href="aboutblastoise.html">about me</a>
+    <input type="text" id="textboxblastoise" class="waterstarters textbox" />
+    <button onclick="blastoise()">clickme</button>
 
     <h4>venusaur evolution</h4>
 
@@ -73,35 +73,34 @@
         <li>venusaur</li>
     </ul>
 
-    <p>1.bulbasaur</p>
+    <p>1.bulbasaur(#0001)</p>
     <img src="images/bulbasaur.jpg" class="img" />
-    <a class="link2" href="aboutme7.html">about me</a>
-    <input type="text" id="textbox"/>
-    <button onclick="sayname()">clickme</button>
+    <a class="link2" href="aboutbulbasaur.html">about me</a>
+    <input type="text" id="textboxbulbasaur" class="grassstarters textbox" />
+    <button onclick="bulbasaur()">clickme</button>
 
-    <p>2.Ivysaur</p>
-    <img src="images/ivysaur.jpg" class="img"/>
+    <p>2.Ivysaur(#0002)</p>
+    <img src="images/ivysaur.jpg" class="img" />
     <a class="link2" href="aboutivysaur.html">about me</a>
+    <input type="text" id="textboxivysaur" class="grassstarters textbox" />
+    <button onclick="ivysaur()">clickme</button>
 
-    
+    <p>3.Venusaur(#0003)</p>
+    <img src="images/venusaur.jpg" class="img" />
+    <a class="link2" href="aboutvenusaur.html">about me</a>
+    <input type="text" id="textboxvenusaur" class="grassstarters textbox" />
+    <button onclick="venusaur()">clickme</button>
+
+    <input type="text" id="Pokemon1" class="grassstarters textbox" />
+    <input type="text" id="Pokemon2" class="grassstarters textbox" />
+
+    <button onclick="getPokemonAndDoBattle()">doBattle</button>
+
 
 
 </body>
 </html>
-<script>
-    function charmander() {
-        var input = document.getElementById("textbox").value;
-        if (input == 'moves') {
-            alert('stratch,ember,tackle');
-        }
-        
-    }
-    function charmeleon() {
-        var input = document.getElementById("textboxcharmeleon").value;
-        if (input == 'moves') {
-            alert('blaze, flamethrower, cut')
-        }
-    }
+<script src="scripts/Script1.js"></script>
 
+<script src="scripts/battle.js"></script>
 
-</script>
